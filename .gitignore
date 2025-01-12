@@ -9,7 +9,6 @@
 main/__pycache__/
 main/migrations/
 
-
 !static/
 !static/**/*
 static/__pycache__/

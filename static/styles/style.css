@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Jersey+15:regular);
 /*? logo font */
 
+
 :root{ 
   --primary-bg:#EEEEEE;
   --secondary:#686D76;
@@ -31,6 +32,7 @@ body {
   flex-direction: column;
   overflow-x: hidden;
 }
+
 header{
   background: var(--accent);
   display: flex;
@@ -67,6 +69,7 @@ nav{
   }
   
   .heading{
+
     color: var(--accent);
   }
 
@@ -136,8 +139,7 @@ nav{
   footer .logo {
     display: inline;
     max-width: 30vw;
-  }
-  
+  } 
   
   /* Bubble animations */
   @keyframes bubble-size {

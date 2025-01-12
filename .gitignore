@@ -10,11 +10,6 @@
 main/__pycache__/
 main/migrations/
 
-!static/
-!static/**/*
-static/__pycache__/
-static/migrations/
-
 !pages/
 !pages/**/*
 pages/__pycache__/

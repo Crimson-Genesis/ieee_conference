@@ -132,6 +132,31 @@ header img {
   text-decoration: none;
   }
 
+  .tag-list {
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;
+  }
+
+  .tag-list li {
+    padding: 1rem;
+    background: var(--accent);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem -0.25rem var(--accent);
+  }
+
+
+
+  .scroller{
+    max-width: 600px;
+    outline: 3px solid red;
+  }
+
+  .scroller-inner {
+    display: flex;
+    gap: 1rem;
+  }
+
   footer {
     width: 100%;
     padding-top: 20em;

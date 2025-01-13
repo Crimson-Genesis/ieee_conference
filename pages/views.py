@@ -14,3 +14,19 @@ def about_view(request, *args, **kwargs):
 
 def contact_view(request, *args, **kwargs):
     return render(request, "contact.html", {})
+
+
+def login_view(request, *args, **kwargs):
+    return render(request, "login.html", {})
+
+
+def register_view(request, *args, **kwargs):
+    return render(request, "register.html", {})
+
+
+def file_upload_view(request, *args, **kwargs):
+    return render(request, "file_upload.html", {})
+
+
+def profile_view(request, *args, **kwargs):
+    return render(request, "profile.html", {})

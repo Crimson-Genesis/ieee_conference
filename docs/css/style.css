@@ -81,7 +81,14 @@ li a {
 
 .main-content {
 	width: 60vw;
-	margin: auto
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-content section {
+	min-height: 50vh;
+	margin: auto;
 }
 
 /* footer animation */

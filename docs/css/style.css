@@ -91,6 +91,18 @@ li a {
 	margin: 10vh auto;
 }
 
+/* on scroll animations */
+
+.hidden {
+	opacity: 0;
+	transition: all 1s;
+}
+
+.show {
+	opacity: 1;
+}
+
+
 /* footer animation */
 
 main {

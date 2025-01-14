@@ -8,3 +8,6 @@ class Profile(models.Model):
     last_name = models.CharField(max_length=50)
     email = models.EmailField()
     phone = PhoneNumberField()
+
+
+class Events(models.Model): ...

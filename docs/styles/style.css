@@ -192,7 +192,18 @@ main {
 }
 
 .scroller[data-animated="true"] .scroller-inner {
-  flex-wrap: nowrap;
+	width: fit-content;
+	flex-wrap: nowrap;
+	animation: scroll var(--_animation-duration,40s) 
+	var(--_animation-direction,forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+	--_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+	--_animation-direction: forwards;
 }
 
 footer {
@@ -204,6 +215,14 @@ footer {
 footer .logo {
 	display: inline;
 	max-width: 30vw;
+}
+
+/* Scroller animations  */
+
+@keyframes scroll {
+	to {
+		transform: translate(-50%);
+	}
 }
 
 /* Bubble animations */

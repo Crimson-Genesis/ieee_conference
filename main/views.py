@@ -40,3 +40,11 @@ def profile_view(request, *args, **kwargs):
     context = {"message": "The Profile Page."}
     return render(request, "profile.html", context)
 
+
+def schedule_view(request, *args, **kwargs):
+    context = {"message": "The Schedule Page."}
+    return render(request, "schedule.html", context)
+
+def keynote_view(request, *args, **kwargs):
+    context = {"message": "The Keynote Page."}
+    return render(request, "keynote.html", context)

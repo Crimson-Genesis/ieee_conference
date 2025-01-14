@@ -44,6 +44,10 @@ h2 {
 }
 /* carousel */
 
+.carousel-item {
+	max-height: 50vh;
+}
+
 /* .main-content h2 p  */
 
 .main-content {

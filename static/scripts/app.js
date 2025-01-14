@@ -17,19 +17,3 @@
     bubblesContainer.appendChild(bubble);
   }
 });
-
-const scrollers = document.querySelectorAll(".scroller");
-
-if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches ) {
-  addAnimation();
-  console.log("DATA attr set");
-}
-else {
-  console.log("something went wrong");
-}
-
-function addAnimation() {
-  scrollers.forEach( (scroller) => {
-    scroller.setAttribute("data-animated", true);
-  }  )
-}

@@ -156,6 +156,10 @@ main {
   margin: auto;
 }
 
+.sponsor-logo {
+	max-width:60px;
+}
+
 .scroller {
 	max-width: 600px;
 }

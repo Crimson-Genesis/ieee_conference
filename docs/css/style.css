@@ -88,8 +88,20 @@ li a {
 
 .main-content section {
 	min-height: 50vh;
-	margin: auto;
+	margin: 10vh auto;
 }
+
+/* on scroll animations */
+
+.hidden {
+	opacity: 0;
+	transition: all 1s;
+}
+
+.show {
+	opacity: 1;
+}
+
 
 /* footer animation */
 

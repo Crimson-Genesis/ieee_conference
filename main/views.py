@@ -39,3 +39,4 @@ def file_upload_view(request, *args, **kwargs):
 def profile_view(request, *args, **kwargs):
     context = {"message": "The Profile Page."}
     return render(request, "profile.html", context)
+

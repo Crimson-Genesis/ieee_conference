@@ -146,22 +146,19 @@ main {
 
 .tag-list li {
 	padding: 1rem;
-	background: var(--accent);
-	border-radius: 0.5rem;
-	box-shadow: 0 0 0.5rem -0.25rem var(--accent);
 }
 
 #sponsors {
-  width: 600px;
+  width: 80vw;
   margin: auto;
 }
 
 .sponsor-logo {
-	max-width:60px;
+	max-width:8em;
 }
 
 .scroller {
-	max-width: 600px;
+	max-width: 80vw;
 }
 
 .scroller-inner {

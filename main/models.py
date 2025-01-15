@@ -19,9 +19,7 @@ class Sponsor(models.Model):
     light_logo = models.URLField(
         default="https://duckduckgo.com/i/742895b2644223c0.jpg"
     )
-    dark_logo = models.URLField(
-        default="https://duckduckgo.com/i/742895b2644223c0.jpg"
-    )
+    dark_logo = models.URLField(default="https://duckduckgo.com/i/742895b2644223c0.jpg")
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
@@ -29,17 +27,38 @@ class Sponsor(models.Model):
         return f"{self.name.capitalize()} {self.site}"  # type: ignore
 
 
-# class Events(models.Model):
-#     event_name = models.CharField(max_length=100)
-#     description = models.CharField(max_length=1000)
-#
-#     def __str__(self):
-#         return f"{self.event_name}"
-#
-#
-# class conference_tracks(models.Model):
-#     track_name = models.CharField(max_length=100)
-#     description = models.CharField(max_length=1000)
-#
-#     def __str__(self):
-#         return f"{self.track_name}"
+class KeynoteSpeaker(models.Model):
+    name = models.CharField(max_length=100)
+    image = models.ImageField()
+    topic = models.CharField(max_length=500)
+    description = models.TextField(max_length=1000, default="No Body.")
+
+    def __str__(self):
+        return f"{self.name}"
+
+
+class ConferenceTrack(models.Model):
+    track_name = models.CharField(max_length=100)
+    description = models.TextField(max_length=1000, default="No Body.")
+
+    def __str__(self):
+        return f"{self.track_name}"
+
+
+class Event(models.Model):
+    event_name = models.CharField(max_length=100, default="Zero")
+    description = models.TextField(max_length=1000, default="No Body.")
+
+    def __str__(self):
+        return f"{self.event_name}"
+
+
+class KeyMilestone(models.Model):
+    class Meta:
+        ordering = ["date"]
+
+    name = models.CharField(max_length=100, verbose_name="Milestone Name")
+    date = models.DateField(verbose_name="Milestone Date")
+
+    def __str__(self):
+        return f"{self.name}"

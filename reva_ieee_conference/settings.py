@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # Installed application.
     "phonenumber_field",
+    "bootstrap5",
     # Own application.
     "main",
 ]

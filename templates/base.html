@@ -1,19 +1,19 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    {% load static %}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IEEE Conference REVA university</title>
     <link rel="stylesheet" href="{% static "css/style.css" %}" />
-    <script src="{% static "js/scripts.js" %}"></script>
-</head>
-
-<body>
-    {% include 'header.html' %}
-    {% block body %}{% endblock %}
-    {% include 'footer.html' %}
-</body>
-
+    <script src="{% static "js/scripts.js" %}" defer></script>
+  </head>
+  {% include 'header.html' %}
+  <body>
+      {% block body %}{% endblock %}
+  </body>
+  {% include 'footer.html' %}
 </html>

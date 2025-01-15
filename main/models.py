@@ -9,6 +9,8 @@ class Profile(models.Model):
     email = models.EmailField()
     phone = PhoneNumberField()
 
+    def __str__(self):
+        return f"{self.first_name.capitalize()} {self.last_name.capitalize()}" #type: ignore
 
 class Sponsor(models.Model):
     name = models.CharField(max_length=100)
@@ -18,5 +20,8 @@ class Sponsor(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return f"{self.name.capitalize()} {self.site}" #type: ignore
 
 class Events(models.Model): ...
+

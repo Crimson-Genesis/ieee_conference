@@ -1,16 +1,24 @@
 {% load static %}
+<style>
+  #reva-logo-footer{
+      width:400px;
+      hight:auto;
+  }
+</style>
 <div>
+  <!-- footer-start -->
   <footer>
     <div class="footer">
       <div class="bubbles"></div>
       <div class="content">
         <div>
           <p>©2025 REVA university, Bangalore</p>
-          <img src="{% static "imgs/reva-university-logo.png" %}" alt="reva-logo" class="logo">
+          <img src="{% static "imgs/reva-university-logo.png" %}" alt="reva-logo" class="logo" id = "reva-logo-footer">
         </div>
       </div>
     </div>
   </footer>
+  <!-- footer-end -->
   <svg style="display: none;">
     <defs>
       <filter id="blob">

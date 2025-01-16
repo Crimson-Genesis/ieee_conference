@@ -11,12 +11,14 @@
     width: 100px;
     height: auto;
   }
-  #reva-navbar {
-  background-color: var(--accent) !important;
-  }
+
+
+  /*#reva-navbar {*/
+  /*background-color: var(--accent) !important;*/
+  /*}*/
 </style>
 <header id ="header">
-  <nav class="navbar navbar-dark navbar-expand-lg bg-dark" id = "reva-navbar">
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id = "reva-navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="{% url 'main:home' %}">
         <img src="{% static "imgs/reva-university-logo.png" %}" alt="Reva University" id="reva-logo-nav">

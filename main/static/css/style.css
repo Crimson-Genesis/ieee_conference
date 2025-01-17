@@ -84,6 +84,16 @@ button {
   font-weight: 200;
 }
 
+.guest {
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
 .container {
   width: 75vw;
   margin: auto;

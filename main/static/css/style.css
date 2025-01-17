@@ -92,22 +92,30 @@ button {
   justify-content: space-between;
 }
 
+.guest img {
+  padding: 1em;
+}
 
 
 .container {
-  width: 75vw;
+  
   margin: auto;
 }
 
 .important-dates {
-  text-align: center;
   display: flex;
+  text-align: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.important-dates img {
+  max-height: 10em;
 }
 
 
 #hero-section {
-  font-size: 4em;
+  font-size: 15em;
 }
 
 .whitespace {

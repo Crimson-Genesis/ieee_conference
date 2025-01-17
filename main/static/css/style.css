@@ -61,15 +61,53 @@ h2 {
   margin: 10vh auto;
 }
 
+button {
+  margin: 1rem !important;
+  width: 20vw;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-section h1 {
+  font-size: 4em;
+}
+
+.hero-section p {
+  font-size: 2em;
+}
+
+.thin {
+  font-weight: 200;
+}
+
 .container {
   width: 75vw;
   margin: auto;
 }
 
 .important-dates {
+  text-align: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+}
+
+
+#hero-section {
+  font-size: 4em;
+}
+
+.whitespace {
+  margin: 2em auto;
+  font-size: 1.4em;
+  line-height: 2em;
+}
+
+.whitespace h2 {
+  text-decoration: underline;
 }
 
 /* on scroll animations */
@@ -150,6 +188,7 @@ main {
 }
 
 #sponsors {
+  display: none;
   width: 80vw;
   margin: auto;
 }
@@ -159,6 +198,7 @@ main {
 }
 
 .scroller {
+  display: none;
   max-width: 80vw;
 }
 

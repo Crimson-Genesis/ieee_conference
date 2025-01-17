@@ -76,6 +76,7 @@ button {
   font-size: 4em;
 }
 
+
 .hero-section p {
   font-size: 2em;
 }
@@ -89,7 +90,7 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .guest img {
